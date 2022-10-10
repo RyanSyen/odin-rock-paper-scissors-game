@@ -17,11 +17,39 @@
   align-items: center;
 }
 
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "retro";
+  src: url(/fonts/Sabo-Regular.otf);
+}
+
 html,
 body {
   background-color: var(--baseBackgroundColor);
+  color: var(--highEmp);
+}
+
+h1 {
+  font-family: 'retro', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 main {
   flex-direction: column;
+}
+
+.top {
+  flex-direction: column;
+}
+
+.top-logo>img {
+  width: 128px;
+  height: 128px;
 }
