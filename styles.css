@@ -10,7 +10,18 @@
   --lowEmp: rgba(255, 255, 255, 0.38);
 }
 
+/* predefined classes  */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html,
 body {
   background-color: var(--baseBackgroundColor);
+}
+
+main {
+  flex-direction: column;
 }
