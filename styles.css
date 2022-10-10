@@ -1,0 +1,16 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --baseBackgroundColor: #121212;
+  --componentBackgroundColor: #424242;
+
+  /* text */
+  --highEmp: rgba(255, 255, 255, 0.87);
+  --mediumEmp: rgba(255, 255, 255, 0.6);
+  --lowEmp: rgba(255, 255, 255, 0.38);
+}
+
+html,
+body {
+  background-color: var(--baseBackgroundColor);
+}
