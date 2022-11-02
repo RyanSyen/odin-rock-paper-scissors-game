@@ -17,15 +17,47 @@
       </div>
       <div class="flexCenterColumn">
         <h1>Welcome to Rock Paper Scissors game</h1>
-        <caption>Humans VS Bots</caption>
+        <p class="caption">Humans 👦 VS Robots 🤖</p>
       </div>
 
     </div>
     <div class="game">
-
+      <div class="scoresheet flexCenter">
+        <div>
+          human scoresheet
+        </div>
+        <div>
+          robot scoresheet
+        </div>
+      </div>
+      <div class="gamePanel flexCenter">
+        <div class="roundStatus" id="roundStatus">
+          <p id="round">Round One</p>
+          <p id="winner" hidden></p>
+        </div>
+        <div id="humanPanel">
+          left - human
+        </div>
+        <div id="robotsPanel">
+          right - robots
+        </div>
+      </div>
+      <progress style="width: 100%;" value="0" max="5" id="progressBar"></progress>
+      <div class="log" id="log" style="visibility: hidden;"></div>
+      <div class="weapons flexCenter" id="weapons">
+        <button id="rock">
+          <img src="images/stone.png" alt="rock">
+        </button>
+        <button id="paper">
+          <img src="images/paper.png" alt="paper">
+        </button>
+        <button id="scissors">
+          <img src="images/scissors.png" alt="scissors">
+        </button>
+      </div>
     </div>
     <div class="result">
-
+      <button id="playBtn">Play</button>
     </div>
   </main>
   <footer>

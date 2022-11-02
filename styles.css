@@ -39,6 +39,13 @@ h1 {
   font-family: 'retro', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
+  text-align: center;
+}
+
+.caption {
+  color: var(--mediumEmp);
+  padding: 0;
+  margin: 0;
 }
 
 main {
@@ -52,4 +59,98 @@ main {
 .top-logo>img {
   width: 128px;
   height: 128px;
+}
+
+.game {
+  margin-top: 25px;
+}
+
+.scoresheet {
+  justify-content: space-between;
+}
+
+.gamePanel {
+  border: 2px dotted #ffffff;
+  background-color: var(--componentBackgroundColor);
+  min-width: 500px;
+  min-height: 200px;
+  justify-content: space-around;
+  background: linear-gradient(#fff, #fff) no-repeat center/2px 100%;
+}
+
+.weapons {
+  justify-content: space-around;
+}
+
+.weapons button {
+  background-color: transparent;
+  border: none;
+  cursor: auto;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  border-radius: 15px;
+}
+
+/* .weapons button:hover {
+  transform: scale(1.05);
+} */
+
+.weapons img {
+  width: 128px;
+  height: 128px;
+}
+
+.result button {
+  background-color: #81D4FA;
+  cursor: pointer;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  border-radius: 15px;
+  width: 500px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* .result button:hover {
+  transform: scale(1.05);
+} */
+
+.roundStatus {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  color: #121212;
+  z-index: 999;
+  padding: 10px 15px;
+  margin: 0;
+  visibility: hidden;
+}
+
+.active {
+  background-color: var(--componentBackgroundColor) !important;
+  cursor: pointer;
+}
+
+.active:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: rgba(255, 255, 255, 0.38) !important;
+  cursor: default !important;
+}
+
+.selected {
+  border: 2px solid yellow !important;
+}
+
+.log {
+  border: 1px solid #fff;
+  color: #fff;
 }
